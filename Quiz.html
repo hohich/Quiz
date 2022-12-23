@@ -15,25 +15,26 @@
 <body>
     <div class="card" style="margin: auto; top:35vh; width: 20rem; text-align: center;">
         <div class="card-body">
-          <h5 class="card-title">Question 1/7</h5>
-          <p class="card-text">How many planets are in the solar system?</p>
+          <h5 class="card-title">Question <span id="counter-label">1</span>/7</h5>
+          <p class="card-text" id="question_text">How many planets are in the solar system?</p>
+          <p class="fw-light" style="font-size: 1.3vh;">1 answer option</p>
           <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
-          <label class="btn btn-secondary" style="background: blueviolet; width: 5vw; margin: 1vh;" for="option1">8</label>
+          <label class="btn btn-secondary" id="true1" style="background: blueviolet; width: 5vw; margin: 1vh;" for="option1">8</label>
 
           <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-          <label class="btn btn-secondary" style="background: blueviolet; width: 5vw; margin: 1vh;" for="option2">9</label>
+          <label class="btn btn-secondary" id="false1" style="background: blueviolet; width: 5vw; margin: 1vh;" for="option2">9</label>
 
           <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
-          <label class="btn btn-secondary" style="background: blueviolet; width: 5vw; margin: 1vh;" for="option3">10</label>
+          <label class="btn btn-secondary" id="false2" style="background: blueviolet; width: 5vw; margin: 1vh;" for="option3">10</label>
         
           <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
-          <label class="btn btn-secondary" style="background: blueviolet; width: 5vw; margin: 1vh;" for="option4">7</label>
+          <label class="btn btn-secondary" id="false3" style="background: blueviolet; width: 5vw; margin: 1vh;" for="option4">7</label>
         </div>
       </div>
 
       <div style="margin-top: 37vh; margin-left:42vw;">
-        <input class="btn btn-primary" style="width: 8vw; height: 5vh; background: rgb(82, 82, 146); border-color: rgb(82, 82, 146);" type="button" value="Input">
-        <input class="btn btn-primary" style="width: 8vw; height: 5vh;  background: rgb(82, 82, 146); border-color: rgb(82, 82, 146);" type="button" value="Input">
+        <button class="btn btn-primary" id="btn1" style="width: 8vw; height: 5vh;  background: rgb(82, 82, 146); border-color: rgb(82, 82, 146);" type="submit" onclick="check()">Check</button>
+        <button class="btn btn-primary" id="btn2" style="width: 8vw; height: 5vh;  background: rgb(82, 82, 146); border-color: rgb(82, 82, 146);" type="submit" onclick="incrementClick()" disabled>Next</button>
       </div>
 
       <script src="./quiz.js"></script>

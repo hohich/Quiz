@@ -13,29 +13,46 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
-    <div class="card" style="margin: auto; top:35vh; width: 20rem; text-align: center;">
+    <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Question <span id="counter-label">1</span>/7</h5>
+          <h5 class="card-title" id="tit">Question <span id="counter-label">1</span>/5</h5>
           <p class="card-text" id="question_text">How many planets are in the solar system?</p>
-          <p class="fw-light" style="font-size: 1.3vh;">1 answer option</p>
+          <p class="fw-light" id="ans">1 answer option</p>
+          
+          <div id="1answ">
           <input type="radio" class="btn-check" value="1" name="options" id="option1" autocomplete="off">
-          <label class="btn btn-secondary" id="opt1" style="background: blueviolet; width: 5vw; margin: 1vh;" for="option1">8</label>
+          <label class="btn btn-primary" id="opt1" for="option1">8</label>
 
           <input type="radio" class="btn-check" value="0" name="options" id="option2" autocomplete="off">
-          <label class="btn btn-secondary" id="opt2" style="background: blueviolet; width: 5vw; margin: 1vh;" for="option2">9</label>
+          <label class="btn btn-primary" id="opt2" for="option2">9</label>
 
           <input type="radio" class="btn-check" value="0" name="options" id="option3" autocomplete="off">
-          <label class="btn btn-secondary" id="opt3" style="background: blueviolet; width: 5vw; margin: 1vh;" for="option3">10</label>
+          <label class="btn btn-primary" id="opt3" for="option3">10</label>
         
           <input type="radio" class="btn-check" value="0" name="options" id="option4" autocomplete="off">
-          <label class="btn btn-secondary" id="opt4" style="background: blueviolet; width: 5vw; margin: 1vh;" for="option4">7</label>
+          <label class="btn btn-primary" id="opt4" for="option4">7</label>
+        </div>
+
+          <div id="2answ">
+          <input type="checkbox" class="btn-check" value="0" name="options" id="option5" autocomplete="off">
+          <label class="btn btn-primary" id="opt5" for="option5">Ron Weasley</label>
+
+          <input type="checkbox" class="btn-check" value="1" name="options" id="option6" autocomplete="off">
+          <label class="btn btn-primary" id="opt6" for="option6">Draco Malfoy</label>
+
+          <input type="checkbox" class="btn-check" value="1" name="options" id="option7" autocomplete="off">
+          <label class="btn btn-primary" id="opt7" for="option7">Hermione Granger</label>
+        
+          <input type="checkbox" class="btn-check" value="0" name="options" id="option8" autocomplete="off">
+          <label class="btn btn-primary" id="opt8" for="option8">Ginny Weasley</label>
+        </div>
 
         </div>
       </div>
 
-      <div style="margin-top: 37vh; margin-left:42vw;">
-        <button class="btn btn-primary" id="btn1" style="width: 8vw; height: 5vh;  background: rgb(82, 82, 146); border-color: rgb(82, 82, 146);" type="submit" onclick="check()">Check</button>
-        <button class="btn btn-primary" id="btn2" style="width: 8vw; height: 5vh;  background: rgb(82, 82, 146); border-color: rgb(82, 82, 146);" type="submit" onclick="incrementClick()" disabled>Next</button>
+      <div id='buttons'>
+        <button class="btn btn-secondary" id="btn1" type="submit" onclick="check()">Check</button>
+        <button class="btn btn-secondary" id="btn2" type="submit" onclick="incrementClick()" disabled>Next</button>
       </div>
 
       <script src="./quiz.js"></script>

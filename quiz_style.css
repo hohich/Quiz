@@ -2,3 +2,89 @@ body{
     height:100vh;
     background: linear-gradient(blue, pink);
 }
+
+.btn.btn-primary{
+    width: 5vw; 
+    margin: 1vh; 
+    border: none;
+}
+
+.btn.btn-secondary{
+    width: 8vw; 
+    height: 5vh;
+    background: rgb(82, 82, 146); 
+    border-color: rgb(82, 82, 146);
+}
+
+.card{
+    margin: auto; 
+    top:35vh; 
+    width: 20rem; 
+    text-align: center;
+}
+
+.fw-light{
+    font-size: 1.3vh;
+}
+
+#buttons{
+    margin-top: 37vh; 
+    margin-left:42vw;
+}
+
+@media  (min-width:1024px) and (max-width:1440px){
+    .btn.btn-primary{
+        width: 9vw; 
+        margin: 0.5vh; 
+    }
+
+    .btn.btn-secondary{
+        width: 15vw;
+    }
+
+    #buttons{
+        margin-left:35vw;
+    }
+
+    .fw-light{
+        font-size: 2vh;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .btn.btn-primary{
+        width: 12vw; 
+        margin: 0.5vh; 
+    }
+
+    .btn.btn-secondary{
+        width: 20vw;
+    }
+
+    #buttons{
+        margin-left:30vw;
+    }
+
+    .fw-light{
+        font-size: 2vh;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .btn.btn-primary{
+        width: 25vw; 
+        margin: 0.5vh; 
+    }
+
+    .btn.btn-secondary{
+        width: 34vw;
+    }
+
+    #buttons{
+        margin-left:17vw;
+    }
+
+    .fw-light{
+        font-size: 1.6vh;
+    }
+}
